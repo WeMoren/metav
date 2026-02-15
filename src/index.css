@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffff;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 75px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3000;
+}
+
+.navlogo-colored {
+  height: 25px;
+}
+
+.navlogo-white {
+  height: 25px;
+}
+
+.navimgs {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbtn {
+  margin-right: 40px;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  background-color: #a30c7d;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navlist {
+  display: flex;
+  gap: 10px;
+}
+
+.navlist a {
+  color: black;
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+}
+
+.navlist a:hover {
+  color: #a30c7d;
+}
+
+.navlist .active {
+  color: #a30c7d;
+}
+
+.mobile-nav-search {
+  width: 150px;
+  height: 29px;
+  margin-right: 30px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.search-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-icon {
+  color: #fff;
+}
+
+.pipe {
+  width: 1px;
+  height: 100%;
+  background: #fff;
+}
+
+.hero {
+  display: flex;
+  gap: 250px;
+  transform: translateY(100px);
+  padding: 40px;
+}
+
+.left-of-hero .hero-heading {
+  font-size: 40px;
+}
+
+.hero-span {
+  color: #a30c7d;
+}
+
+.left-of-hero {
+}
+
+.right-of-hero {
+  transform: translateY(60px);
+}
+
+.set1,
+.set2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.set1 {
+  transform: translateY(-40px);
+}
+
+.hero-img3,
+.hero-img4 {
+  transform: translateY(-50px);
+}
+
+.hero-img1,
+.hero-img2,
+.hero-img3,
+.hero-img4 {
+  height: 100px;
+}
+
+.hero-search {
+  height: 35px;
+}
+
+input {
+  height: 35px;
+  border: 1px solid grey;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.hero-btn {
+  height: 40px;
+  width: 110px;
+  background-color: #a30c7d;
+  color: #fff;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.snap-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.snap-section {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+
+  width: 280px;
+  height: 100vh;
+  background: transparent;
+  -webkit-backdrop-filter: blur(80px);
+  backdrop-filter: blur(80px);
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: left 0.3s ease;
+  gap: 1.5rem;
+  z-index: 9999;
+}
+
+.mobile-menu.show {
+  left: 0;
+}
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: #a30c7d41;
+  z-index: 9998;
+}
+
+.mobile-link {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.4s ease-in-out;
+}
+
+.mobile-link:hover {
+  color: #a30c7d;
+}
+
+.modal-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.098);
+  z-index: 10000;
+}
+
+.modal-content {
+  position: sticky;
+  /* isolation: isolate; */
+  width: 50%;
+  max-width: 420px;
+  height: 250px;
+  background: #fff;
+  padding: 10px;
+  z-index: 100000;
+}
+
+/* .modal-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+} */
+
+.close {
+  color: #fff;
+  cursor: pointer;
+}
+
+hr {
+  width: 100%;
+}
+
+.bridge-images-lg,
+.bridge-images-sm {
+  width: 100vw;
+  height: 60px;
+  background: #a30c7d;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bridge-img {
+  height: 35px;
+}
+
+@media (max-width: 340px) {
+  .left-of-hero .hero-heading {
+    font-size: 16px;
+  }
+
+  .left-of-hero .hero-text {
+    font-size: 12px;
+  }
+
+  .menu-icon {
+    height: 20px;
+    width: 20px;
+  }
+
+  .hero-img1,
+  .hero-img2,
+  .hero-img3,
+  .hero-img4 {
+    height: 75px;
+  }
+}
+
+@media (max-width: 420px) {
+  .navlogo-white {
+    height: 20px;
+  }
+
+  .open-menu {
+    height: 20px;
+    width: 20px;
+  }
+
+  .left-of-hero .hero-heading {
+    font-size: 25px;
+  }
+
+  .mobile-nav-search {
+    width: 110px;
+    height: 20px;
+    margin-right: 30px;
+  }
+
+  .search-btn {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 914px) {
+  .navbar {
+    background-color: #a30c7d;
+    padding-right: 60px;
+  }
+
+  .menu-icon {
+    transform: translateY(3px);
+  }
+
+  .navlogo-colored {
+    display: none;
+  }
+
+  .navlist {
+    display: none;
+  }
+
+  .navbtn {
+    display: none;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .left-of-hero .hero-text {
+    text-align: center;
+  }
+
+  .set1,
+  .set2 {
+    display: flex;
+    gap: 20px;
+  }
+
+  .hero-img2 {
+    transform: translateY(-25px);
+  }
+
+  .hero-img3 {
+    transform: translateY(0px);
+  }
+
+  .hero-img4 {
+    transform: translateY(-25px);
+  }
+
+  .left-of-hero {
+    text-align: left;
+  }
+
+  .hero-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .hero-search {
+    display: none;
+  }
+
+  .bridge-images-sm {
+    display: flex;
+  }
+
+  .bridge-images-lg {
+    display: none;
+  }
+
+  .places {
+    transform: translateY(100px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+  .open-menu {
+    display: none;
+  }
+  .close-menu {
+    display: none;
+  }
+
+  .navlogo-white {
+    display: none;
+  }
+
+  .mobile-nav-search {
+    display: none;
+  }
+
+  .set2 {
+    transform: translateY(-40px);
+  }
+
+  .places .bridge-images-sm {
+    display: none;
+  }
+}
