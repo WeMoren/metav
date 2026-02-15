@@ -397,7 +397,7 @@ hr {
 
   .bridge-images-sm {
     display: flex;
-    transform: translateY(100px);
+    transform: translateY(200px);
   }
 
   .bridge-images-lg {
