@@ -238,35 +238,87 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.098);
+  background-color: #0000003d;
   z-index: 10000;
 }
 
-.modal-content {
-  position: sticky;
-  /* isolation: isolate; */
-  width: 50%;
+.madal-content {
+  width: 90%;
   max-width: 420px;
-  height: 250px;
-  background: #fff;
+  min-height: 240px;
   padding: 10px;
+  background: #fff;
+  position: relative;
+  border-radius: 10px;
   z-index: 100000;
 }
 
+.modal-heading h3 {
+  transform: translateY(-15px);
+  font-size: 16px;
+}
+
 /* .modal-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: white;
+  padding: 10px;
 } */
 
 .close {
-  color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #858484;
   cursor: pointer;
+  transition: 0.4s ease;
 }
 
-hr {
+.close:hover {
+  color: #000000;
+}
+
+.madal-content hr {
   width: 100%;
+  transform: translateY(-10px);
+}
+
+.metamask-cont,
+.walletconnect-cont {
+  position: relative;
+  border: 1px solid #b6b3b3;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  padding-left: 10px;
+}
+
+.walletconnect-cont {
+  transform: translateY(10px);
+}
+
+.metamask,
+.walletconnect {
+  height: 40px;
+  width: 40px;
+}
+
+.forward {
+  position: absolute;
+  right: 20px;
+  color: #a09d9d;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.forward:hover {
+  color: #000000;
+}
+
+.metamask-cont h6 {
+  margin-left: 10px;
+}
+.walletconnect-cont h6 {
+  margin-left: 10px;
 }
 
 .bridge-images-lg,
