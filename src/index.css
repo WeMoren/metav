@@ -253,14 +253,10 @@ html {
   z-index: 100000;
 }
 
-.modal-heading h3 {
+.madal-content h3 {
   transform: translateY(-15px);
   font-size: 16px;
 }
-
-/* .modal-heading {
-  padding: 10px;
-} */
 
 .close {
   position: absolute;
