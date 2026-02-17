@@ -351,6 +351,20 @@ html {
   .hero-img4 {
     height: 75px;
   }
+
+  .madal-content {
+    width: 200px;
+  }
+
+  .close {
+    height: 16px;
+    width: 16px;
+  }
+
+  .madal-content h3,
+  p {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 420px) {
